@@ -1,0 +1,60 @@
+.wel{
+  font-family: 'Anton', sans-serif;
+font-family: 'Noto Serif', serif;
+  position: relative;
+  top: 130px;
+  left: 680px;
+}
+.lo{
+  font-family: 'Anton', sans-serif;
+font-family: 'Noto Serif', serif;
+position: relative;
+top: 150px;
+left: 730px;
+
+}
+.logo{
+  height:auto;
+  max-width: 100%;
+}
+.hell{
+  display: inline-block;
+  position: relative;
+  top: 200px;
+  left:200px;
+}
+
+.hell1{
+  display: inline-block;
+  position: relative;
+  top: 55px;
+  left:600px;
+}
+
+.hell2{
+  display: inline-block;
+  position: relative;
+  bottom:90px;
+  left:1000px;
+}
+
+.admin{
+  position: relative;
+  left: 85px;
+}
+.admin1{
+  position: relative;
+  left: 75px;
+}
+.desc{
+  position: relative;
+  left:30px;
+}
+.desc1{
+  position: relative;
+  left:50px;
+}
+.tn1{
+  position: relative;
+  left:85px;
+}
