@@ -58,3 +58,122 @@ left: 730px;
   position: relative;
   left:85px;
 }
+.lis{
+  position: relative;
+  left: 30px;
+}
+.doct{
+  padding: 10px;
+  position:relative;
+  left: 550px;
+  top: 100px;
+}
+.docth{
+  padding: 10px;
+  position:relative;
+  left: 550px;
+  top: 150px;
+}
+.frm{
+  position: relative;
+  right: 150px;
+}
+.bts{
+  position: relative;
+  top: 100px;
+  left: 550px;
+}
+.tab{
+  position:relative;
+  right:600px;
+}
+.ahell{
+  position: relative;
+  top: 180px;
+  left: 180px;
+
+}
+
+.ahell1{
+  position: relative;
+  top: 35px;
+  left: 600px;
+
+}
+
+.ahell2{
+  position: relative;
+  bottom: 108px;
+  left: 1050px;
+
+}
+.admin1{
+  position: relative;
+  left: 50px;
+}
+.desc1{
+  position: relative;
+  right: 30px;
+}
+.admin2{
+  position: relative;
+  left: 50px;
+}
+.desc2{
+  position: relative;
+  left: 40px;
+}
+.wel1{
+position: relative;
+top: 130px;
+left: 500px;
+}
+.ahell0{
+  position: relative;
+  top: 200px;
+  left: 180px;
+
+}
+
+.ahell10{
+  position: relative;
+  top: 35px;
+  left: 600px;
+
+}
+
+.ahell20{
+  position: relative;
+  bottom: 130px;
+  left: 1050px;
+
+}
+.admin0{
+  position:relative;
+  left: 40px;
+}
+.desc0{
+  position: relative;
+  left: 30px;
+}
+.patreg{
+  position: relative;
+  left: 500px;
+  top: 50px;
+}
+.attn{
+  position: relative;
+  top: 100px;
+  left: 480px;
+}
+.bts1{
+  position: relative;
+  right: 50px;
+  top: 20px;
+
+}
+.doctp{
+  position: relative;
+  left: 450px;
+  top:50px;
+}

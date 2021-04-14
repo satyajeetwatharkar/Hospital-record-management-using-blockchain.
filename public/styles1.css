@@ -1,0 +1,30 @@
+.hell{
+  position: relative;
+  top: 300px;
+  left: 80px;
+}
+
+.hell1{
+  position: relative;
+  top: 155px;
+  left: 440px;
+}
+
+.hell2{
+  position: relative;
+  top:10px;
+  left: 790px;
+}
+
+.hell3{
+  position: relative;
+  bottom: 132px;
+  left: 1150px;
+}
+.wel{
+  font-family: 'Anton', sans-serif;
+font-family: 'Noto Serif', serif;
+  position: relative;
+  top: 100px;
+  left: 540px;
+}

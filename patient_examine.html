@@ -5,10 +5,41 @@
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand lis" href="#">The City Hospital</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse lis" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/PatientRegistration">Add Personal details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/MedicalRecord">Add Medical Record</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/DoctorMod">Doctor module</a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+        <a class="nav-link" href="/">Sign out</a>
+      </li>
+    </ul>
+  </nav>
+
+</header>
     <body>
 
 
-        <h1>Patient Body examine details</h1>
+        <h1 class="doctp">Patient Body examine details</h1>
         <script src="https://cdn.jsdelivr.net/npm/web3@1.2.8/dist/web3.js"></script>
     <script>
 
@@ -330,7 +361,7 @@
           "type": "function"
         }
       ];
-        var contractaddress = '0x31dCBe2524497669AdB2FC6134A357eE84006f91';
+        var contractaddress = '0x9045aDd35C3884e39C2EaC3D7A64c9E914DEe59a';
 
 
         function inv_details() {
@@ -384,123 +415,110 @@
 
         </script>
 
-
-    <form>
-		<table style="width:25%">
-            <tr>
-			<td>Enter Patient Id:</td>
-			<td><input type="text" id="id0" name="id0"></td>
-		  </tr>
-
-
-		</table>
-
-	</form>
-
-        <h2>Investigations</h2>
-    <form>
-		<table style="width:25%">
-
-			<td>Blood Test:</td>
-			<td><input type="text" id="blood" name="blood"></td>
-		  </tr>
-		  <tr>
-			<td>Urine Test:</td>
-			<td><input type="text" id="uri" name="uri"></td>
-		  </tr>
-
-		   <tr>
-			<td>ECG:</td>
-			<td><input type="text" id="ecg" name="ecg"></td>
-		  </tr>
-            <tr>
-			<td>MRI Scan:</td>
-			<td><input type="text" id="mri" name="mri"></td>
-		  </tr>
-		  <tr>
-			<td>CT Scan:</td>
-			<td><input type="text" id="ct" name="ct"></td>
-		  </tr>
-<tr>
-			<td>X-ray:</td>
-			<td><input type="text" id="xray" name="xray"></td>
-		  </tr>
-<tr>
-			<td>Lab Test(if any other):</td>
-			<td><input type="text" id="lab" name="lab"></td>
-		  </tr>
-
-		</table>
-
-	<h2> General Examination</h2>
-    <form>
-		<table style="width:25%">
-
-			<td> Built:</td>
-			<td><input type="text" id="built" name="built"></td>
-		  </tr>
-		  <tr>
-			<td>Nourishment:</td>
-			<td><input type="text" id="nou" name="nou"></td>
-		  </tr>
-		  <tr>
-			<td>Eyes:</td>
-			<td><input type="text" id="eyes" name="eyes"></td>
-		  </tr>
-		  <tr>
-			<td>Tongue:</td>
-			<td><input type="text" id="ton" name="ton"></td>
-		  </tr>
-		  <tr>
-			<td>Pulse:</td>
-			<td><input type="text" id="pulse" name="pulse"></td>
-		  </tr>
-		  <tr>
-			<td>Blood Pressure:</td>
-			<td><input type="text" id="bp" name="bp"></td>
-		  </tr>
-		  <tr>
-			<td>Temperature:</td>
-			<td><input type="text" id="temp" name="temp"></td>
-		  </tr>
-		  <tr>
-			<td>Respiratory rate:</td>
-			<td><input type="text" id="res" name="res"></td>
-		  </tr>
-
-		</table>
-
-	<h2> Systemic Examination</h2>
-    <form>
-		<table style="width:25%">
-
-			<td>CVS:</td>
-			<td><input type="text" id="cvs" name="cvs"></td>
-		  </tr>
-		  <tr>
-			<td>CNS:</td>
-			<td><input type="text" id="cns" name="cns"></td>
-		  </tr>
-		   <tr>
-			<td>RS:</td>
-			<td><input type="text" id="rs" name="rs"></td>
-		  </tr>
-		   <tr>
-			<td>Abdomen System:</td>
-			<td><input type="text" id="abs" name="abs"></td>
-		  </tr>
-
-		</table>
-		</form>
-
-		  <form>
-		<table style="width:25%">
-         <tr>
-		  <td><input type="button" onclick="inv_details()" value="Submit"></td>
-		  </tr>
-		</table>
+        <h2 class="doct">Scans</h2>
+        <form class="doct" action="/" method="post">
+        <div class="form-group col-md-4">
+          <label for="id1">Enter Patient id:</label>
+          <input type="text" class="form-control frm" id="id1" placeholder="Patient id">
+        </div>
 
 
-	</form>
+        </form>
+
+        <h2 class="doct">Investigations</h2>
+
+
+    <form class="doct" action="/" method="post">
+    <div class="form-group col-md-4">
+      <label for="blood">Blood Test:</label>
+      <input type="text" class="form-control frm" id="blood" placeholder="Blood test">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="uri">Urine test:</label>
+      <input type="text" class="form-control frm" id="uri" placeholder="Urine test">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="ecg">ECG:</label>
+      <input type="text" class="form-control frm" id="ecg" placeholder="ECG">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="mri">MRI Scan:</label>
+      <input type="text" class="form-control frm" id="mri" placeholder="MRI Scan">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="ct">CT scan:</label>
+      <input type="text" class="form-control frm" id="ct" placeholder="CT Scan">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="xray">Xray scan:</label>
+      <input type="text" class="form-control frm" id="xray" placeholder="Xray Scan">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="lab">Lab test:</label>
+      <input type="text" class="form-control frm" id="lab" placeholder="Lab test">
+    </div>
+    </form>
+
+	<h2 class="doct"> General Examination</h2>
+
+    <form class="doct" action="/" method="post">
+    <div class="form-group col-md-4">
+      <label for="built">Built:</label>
+      <input type="text" class="form-control frm" id="built" placeholder="Built">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="nou">Nourishment:</label>
+      <input type="text" class="form-control frm" id="nou" placeholder="Nourishment">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="eyes">Eyes:</label>
+      <input type="text" class="form-control frm" id="eyes" placeholder="Eyes">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="ton">Tongue:</label>
+      <input type="text" class="form-control frm" id="ton" placeholder="Tongue">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="pulse">Pulse</label>
+      <input type="text" class="form-control frm" id="pulse" placeholder="Pulse">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="bp">Blood pressure:</label>
+      <input type="text" class="form-control frm" id="bp" placeholder="BP">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="temp">Temperature:</label>
+      <input type="text" class="form-control frm" id="temp" placeholder="Temperature">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="res">Respiratory rate:</label>
+      <input type="text" class="form-control frm" id="res" placeholder="Respiratory rate">
+    </div>
+    </form>
+
+	<h2 class="doct"> Systemic Examination</h2>
+
+    <form class="doct" action="/" method="post">
+    <div class="form-group col-md-4">
+      <label for="built">CVS:</label>
+      <input type="text" class="form-control frm" id="cvs" placeholder="CVS">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="cns">CNS:</label>
+      <input type="text" class="form-control frm" id="cns" placeholder="CNS">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="rs">RS:</label>
+      <input type="text" class="form-control frm" id="rs" placeholder="RS">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="abs">Abdomen System:</label>
+      <input type="text" class="form-control frm" id="abs" placeholder="Abdomen System">
+    </div>
+    <a class="btn btn-primary bts1" onclick="inv_details()">Submit</a>
+    <a href="/PatientMod" class="btn btn-primary bts1">Back</a>
+    </form>
+
+
     </body>
 </html>
