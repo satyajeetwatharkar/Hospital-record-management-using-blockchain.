@@ -37,6 +37,16 @@ var express = require("express"),
     passport.serializeUser(User.serializeUser());
     passport.deserializeUser(User.deserializeUser());
 
+    const appointSchema=new mongoose.Schema({
+      name:String,
+      date:String,
+      time:String,
+      reason:String,
+      id:String
+
+});
+const Appoint=mongoose.model("Appoint",appointSchema);
+
 
 
 
@@ -46,9 +56,45 @@ app.use(express.static("public"));
 //Copied
 
 // Showing secret page
-app.get("/secret", isLoggedIn, function (req, res) {
+app.get("/sec", isLoggedIn, function (req, res) {
+
     res.sendFile(__dirname+"/Frontpage.html");
 });
+
+app.get("/display1", function (req, res) {
+    res.render("display1");
+  });
+
+
+app.post("/display", function (req, res) {
+  var doct1=req.body.doctorId1;
+  var dat=req.body.Daate;
+  Appoint.find({id:doct1,date:dat},function(err,appts){
+    if(err){console.log(err);}else{console.log("Done");}
+    res.render('display',{'appts':appts});
+  });
+
+});
+
+app.get("/appoint", function (req, res) {
+    res.render("appoint");
+});
+
+app.post("/appoint", function (req, res) {
+    var name1=req.body.name;
+    var date1=req.body.date;
+    var time1=req.body.time;
+    var reason1=req.body.reason;
+    var id1=req.body.doctorId;
+
+    const appt=new Appoint({name:name1,date:date1,time:time1,reason:reason1,id:id1});
+    appt.save();
+      res.sendFile(__dirname+"/ReceptionMod.html");
+
+});
+
+
+
 
 // Showing register form
 app.get("/register", function (req, res) {
@@ -73,6 +119,8 @@ app.post("/register", function (req, res) {
     });
 });
 
+
+
 //Showing login form
 app.get("/login", function (req, res) {
     res.render("login");
@@ -80,10 +128,16 @@ app.get("/login", function (req, res) {
 
 //Handling user login
 app.post("/login", passport.authenticate("local", {
-    successRedirect: "/secret",
+    successRedirect: "/sec",
     failureRedirect: "/"
 }), function (req, res) {
 });
+
+
+
+
+
+
 
 //Handling user logout
 app.get("/logout", function (req, res) {
