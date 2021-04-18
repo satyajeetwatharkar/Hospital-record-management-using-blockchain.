@@ -58,7 +58,7 @@ app.use(express.static("public"));
 // Showing secret page
 app.get("/sec", isLoggedIn, function (req, res) {
 
-    res.sendFile(__dirname+"/Frontpage.html");
+    res.sendFile(__dirname+"/html/Frontpage.html");
 });
 
 app.get("/display1", function (req, res) {
@@ -181,7 +181,7 @@ function isLoggedIn(req, res, next) {
 
 app.get("/",function(req,res){
 
-  res.sendFile(__dirname+"/Front.html");
+  res.sendFile(__dirname+"/html/Front.html");
 
 });
 /* app.get("/Frontpage",function(req,res){
@@ -193,88 +193,88 @@ app.get("/",function(req,res){
 
 app.get("/staffMember",function(req,res){
 
-  res.sendFile(__dirname+"/staffMember.html");
+  res.sendFile(__dirname+"/html/staffMember.html");
 
 });
 
 app.get("/AdminMod",function(req,res){
 
-  res.sendFile(__dirname+"/AdminMod.html");
+  res.sendFile(__dirname+"/html/AdminMod.html");
 
 });
 
 app.get("/doctor",function(req,res){
 
-  res.sendFile(__dirname+"/doctor.html");
+  res.sendFile(__dirname+"/html/doctor.html");
 
 });
 
 app.get("/doctorDetails",function(req,res){
 
-  res.sendFile(__dirname+"/doctor_details.html");
+  res.sendFile(__dirname+"/html/doctor_details.html");
 
 });
 
 app.get("/staffMemberDetail",function(req,res){
 
-  res.sendFile(__dirname+"/staffMemberDetail.html");
+  res.sendFile(__dirname+"/html/staffMemberDetail.html");
 
 });
 
 app.get("/DoctorMod",function(req,res){
 
-  res.sendFile(__dirname+"/DoctorMod.html");
+  res.sendFile(__dirname+"/html/DoctorMod.html");
 
 });
 
 app.get("/PatientMod",function(req,res){
 
-  res.sendFile(__dirname+"/PatientMod.html");
+  res.sendFile(__dirname+"/html/PatientMod.html");
 
 });
 
 app.get("/PatientRegistration",function(req,res){
 
-  res.sendFile(__dirname+"/PatientRegistration.html");
+  res.sendFile(__dirname+"/html/PatientRegistration.html");
 
 });
 
 app.get("/MedicalRecord",function(req,res){
 
-  res.sendFile(__dirname+"/MedicalRecord.html");
+  res.sendFile(__dirname+"/html/MedicalRecord.html");
 
 });
 
 app.get("/patient_examine",function(req,res){
 
-  res.sendFile(__dirname+"/patient_examine.html");
+  res.sendFile(__dirname+"/html/patient_examine.html");
 
 });
 
 app.get("/ViewPatient",function(req,res){
 
-  res.sendFile(__dirname+"/ViewPatient.html");
+  res.sendFile(__dirname+"/html/ViewPatient.html");
 
 });
 app.get("/patient_details",function(req,res){
 
-  res.sendFile(__dirname+"/patient_details.html");
+  res.sendFile(__dirname+"/html/patient_details.html");
 
 });
 app.get("/record_details",function(req,res){
 
-  res.sendFile(__dirname+"/record_details.html");
+  res.sendFile(__dirname+"/html/record_details.html");
 
 });
 app.get("/examine_details",function(req,res){
 
-  res.sendFile(__dirname+"/examine_details.html");
+  res.sendFile(__dirname+"/html/examine_details.html");
 
 });
 
 app.get("/ReceptionMod",function(req,res){
 
-  res.sendFile(__dirname+"/ReceptionMod.html");
+  res.sendFile(__dirname+"/html/ReceptionMod.html");
 
 });
 
